@@ -1,0 +1,93 @@
+.tooltip {
+  position: absolute;
+  z-index: ;
+  display: block;
+  font-size: ;
+}
+.tooltip.top {
+  margin-top: -3px;
+  padding:  0;
+}
+.tooltip.right {
+  margin-left: 3px;
+  padding: 0 ;
+}
+.tooltip.bottom {
+  margin-top: 3px;
+  padding:  0;
+}
+.tooltip.left {
+  margin-left: -3px;
+  padding: 0 ;
+}
+.tooltip-inner {
+  max-width: ;
+  padding: 3px 8px;
+  color: ;
+  text-align: center;
+  background-color: ;
+  border-radius: ;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -;
+  border-width:   0;
+  border-top-color: ;
+}
+.tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  right: ;
+  margin-bottom: -;
+  border-width:   0;
+  border-top-color: ;
+}
+.tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: ;
+  margin-bottom: -;
+  border-width:   0;
+  border-top-color: ;
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -;
+  border-width:    0;
+  border-right-color: ;
+}
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -;
+  border-width:  0  ;
+  border-left-color: ;
+}
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -;
+  border-width: 0  ;
+  border-bottom-color: ;
+}
+.tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  right: ;
+  margin-top: -;
+  border-width: 0  ;
+  border-bottom-color: ;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: ;
+  margin-top: -;
+  border-width: 0  ;
+  border-bottom-color: ;
+}

@@ -1,0 +1,93 @@
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: ;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-content {
+  position: relative;
+  background-color: ;
+  border: 1px solid ;
+  border-radius: ;
+  background-clip: padding-box;
+  outline: 0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: ;
+  background-color: ;
+}
+.modal-header {
+  padding: ;
+  border-bottom: 1px solid ;
+  min-height: ;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: ;
+}
+.modal-body {
+  position: relative;
+  padding: ;
+}
+.modal-footer {
+  padding: ;
+  text-align: right;
+  border-top: 1px solid ;
+}
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: ) {
+  .modal-dialog {
+    width: ;
+    margin: 30px auto;
+  }
+  .modal-sm {
+    width: ;
+  }
+}
+@media (min-width: ) {
+  .modal-lg {
+    width: ;
+  }
+}

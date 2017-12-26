@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Shopping Cart</title>
+<!-- Bootstrap stylesheet -->
+<link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+
+<!-- icofont -->
+<link href="../assets/css/icofont/icofont.css" rel="stylesheet" type="text/css" />
+<!-- crousel css -->
+<link href="../assets/js/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+<!--bootstrap select-->
+<link href="../assets/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+<!-- stylesheet -->
+<link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- header start here-->
+<header>
+	<!--top start here -->
+	<div class="top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12">
+					<ul class="list-inline pull-left icon">
+						<li><a href="contact_us.html"><i class="icofont icofont-ui-message"></i> Email : info@restaurant.com</a></li>
+						<li><a href="contact_us.html"><i class="icofont icofont-phone"></i> Phone : 123 456 7890</a></li>
+						<li><a href="shoppingcart.html"><i class="icofont icofont-cart-alt"></i> Cart</a></li>
+					</ul>
+					<ul class="list-inline pull-right  icon">
+						<li>
+							<form method="post" enctype="multipart/form-data" id="form-language">
+								<div class="btn-group">
+									<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+										<i class="icofont icofont-globe"></i>Language : <span class="name"><span class="hidden-xs">English</span> <i class="icofont icofont-caret-down"></i></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="javascript:;">English</a></li>
+									</ul>
+								</div>
+							</form>
+						</li>
+						<li>
+							<ul class="list-inline social">
+								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+								<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+								<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+								<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+								<li><a href="https://in.pinterest.com/" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+								<li><a href="https://www.youtube.com/" target="_blank"><i class="icofont icofont-social-youtube-play"></i></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--top end here -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-12">
+				<div id="logo">
+					<a href="../index.html"><img class="img-responsive" src="../assets/images/logo.png" alt="logo" title="logo" /></a>
+				</div>
+			</div>
+				
+			<div class="col-md-7 col-sm-7 col-xs-12 paddleft">
+				<!-- menu start here -->
+				<div id="menu">	
+					<nav class="navbar">
+						<div class="navbar-header">
+							<span class="menutext visible-xs">Menu</span>
+							<button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="btn btn-navbar navbar-toggle" type="button"><i class="icofont icofont-navigation-menu"></i></button>
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse padd0">
+							<ul class="nav navbar-nav text-right">
+								<li><a href="../index.html">home</a></li>
+								<li><a href="about_us.html">about us</a></li>
+								<li><a href="our_menu.html">Our Menu</a></li>
+								<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MORE <i class="icofont icofont-caret-down"></i></a>
+									<div class="dropdown-menu repeating">
+										<div class="dropdown-inner">
+											<ul class="list-unstyled">
+												<li><a href="our_blog.html">Blogs</a></li>
+												<li><a href="testimonial.html">Testimonials</a></li>
+												<li><a href="our_gallery.html">Gallery</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="shop.html">Shops</a></li>
+								<li><a href="search.html">Search</a></li>
+								<li><a href="contact_us.html">contact us</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<!-- menu end here -->
+			</div>
+			
+			<div class="col-md-2 col-sm-2 col-xs-12 button-top paddleft">
+				<button class="btn-primary" type="button" onclick="location.href='reservation.html'">book your table</button>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- header end here -->
+
+<!-- bread-crumb start here -->
+<div class="bread-crumb">
+	<img src="../assets/images/banner_top.jpg" class="img-responsive" alt="banner-top" title="banner-top">
+	<div class="container">
+		<div class="matter">
+			<h2>Shopping Cart</h2>
+			<ul class="list-inline">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="shoppingcart.html">Shopping Cart</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- bread-crumb end here -->
+
+<!-- cart start here -->
+<div class="mycart">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab-cart" data-toggle="tab"><span>1</span>shopping cart</a></li>
+					<li><a href="#tab-info" data-toggle="tab"><span>2</span>shopping info</a></li>
+					<li><a href="#tab-payment" data-toggle="tab"><span>3</span>payment method</a></li>
+				</ul>
+				<div class="bor"></div>
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab-cart">
+						<form method="post" enctype="multipart/form-data">
+							<h2>You have 2 items in your order.</h2>
+							<div class="table-responsive">
+								<table class="table  table-bordered">
+									<thead>
+										<tr>
+											<td class="text-center">Name</td>
+											<td class="text-center">Price</td>
+											<td class="text-center">Qty.</td>
+											<td class="text-center">Total</td>
+											<td></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<a href="#">
+													<img src="../assets/images/our-menu/01.jpg" class="img-responsive" alt="thumb" title="thumb" />
+												</a>
+												<div class="name">
+													<h4>Food Title Here</h4>
+													<p>Curses / Dictum / Risus</p>
+ 													<div class="rating">
+														<i class="icofont icofont-star"></i>
+														<i class="icofont icofont-star"></i>
+														<i class="icofont icofont-star"></i>
+														<i class="icofont icofont-star"></i>
+														<i class="icofont icofont-star"></i>
+													</div>
+												</div>
+											</td>
+											<td class="text-center">$ 35.00</td>
+											<td class="text-center">
+												<p class="qtypara">
+													<span id="minus1" class="minus"><i class="icofont icofont-minus"></i></span>
+													<input type="text" name="quantity" value="1" size="2" id="input-quantity1" class="form-control qty" />
+													<span id="add1" class="add"><i class="icofont icofont-plus"></i></span>
+													<input type="hidden" name="product_id" value="1" />
+												</p>
+											</td>
+											<td class="text-center">$35.00</td>
+											<td class="text-center">
+												<button type="button"><i class="icofont icofont-close-line"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="#">
+													<img src="../assets/images/our-menu/01.jpg" class="img-responsive" alt="thumb" title="thumb" />
+												</a>
+												<div class="name">
+													<h4>Food Title Here</h4>
+													<p>Curses / Dictum / Risus</p>
+ 													<div class="rating">
+														<i class="icofont icofont-star"></i>
+														<i class="icofont icofont-star"></i>
+														<i class="icofont icofont-star"></i>
+														<i class="icofont icofont-star"></i>
+														<i class="icofont icofont-star"></i>
+													</div>
+												</div>
+											</td>
+											<td class="text-center">$ 35.00</td>
+											<td class="text-center">
+												<p class="qtypara">
+													<span id="minus2" class="minus"><i class="icofont icofont-minus"></i></span>
+													<input type="text" name="quantity" value="1" size="2" id="input-quantity2" class="form-control qty" />
+													<span id="add2" class="add"><i class="icofont icofont-plus"></i></span>
+													<input type="hidden" name="product_id" value="1" />
+												</p>
+											</td>
+											<td class="text-center">$35.00</td>
+											<td class="text-center">
+												<button type="button"><i class="icofont icofont-close-line"></i></button>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="5">
+												<h3 class="text-right">SUBTOTAL - $70.00</h3>
+												<div class="buttons pull-left">
+													<a href="" class="btn btn-primary">Continue Shopping</a>
+												</div>
+												<div class="buttons pull-right">
+													<a href="" class="btn btn-primary">Checkout</a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane col-md-12 col-sm-12 col-xs-12" id="tab-info">
+						<div class="col-md-5 col-sm-5 col-xs-12 padd0">
+							<h6>shopping address</h6>
+							<form method="post" enctype="multipart/form-data">	
+								<fieldset>	
+									<div class="form-group">
+										<input name="india" value="" placeholder="india" id="input-india" class="form-control" type="text">
+									</div>
+									<div class="form-group">
+										<input name="City" value="" placeholder="City" id="input-City" class="form-control" type="text">
+									</div>
+									<div class="form-group">
+										<input name="state" value="" placeholder="state / region / province" id="input-state" class="form-control" type="text">
+									</div>
+									<div class="form-group">
+										<input name="code" value="" placeholder="zip code" id="input-code" class="form-control" type="text">
+									</div>
+									<div class="form-group">
+										<input name="address" value="" placeholder="address" id="input-address" class="form-control" type="text">
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="col-md-2 col-sm-2 co-xs-12"></div>
+						<div class="col-md-5 col-sm-5 col-xs-12 padd0">
+							<h6>contact information</h6>
+							<form method="post" enctype="multipart/form-data">	
+								<fieldset>	
+									<div class="form-group">
+										<input name="firstname" value="" placeholder="first name" id="input-firstname" class="form-control" type="text">
+									</div>
+									<div class="form-group">
+										<input name="lastname" value="" placeholder="last name" id="input-lastname" class="form-control" type="text">
+									</div>
+									<div class="form-group">
+										<input name="email" value="" placeholder="email" id="input-email" class="form-control" type="text">
+									</div>
+									<div class="form-group">
+										<input name="phone" value="" placeholder="phone number" id="input-phone" class="form-control" type="text">
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 padd0">
+							<div class="buttons pull-left">
+								<button type="button" class="btn-primary">shopping cart</button>
+							</div>
+							<div class="buttons pull-right">
+								<button type="button" class="btn-primary">payment method</button>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane col-md-12 col-sm-12 col-xs-12"  id="tab-payment">
+						<form class="form-horizontal" method="post">
+							<fieldset>
+								<div class="form-group ">
+									<ul class="list-inline text-center link">
+										<li class="active">
+											<a href="#"><img src="../assets/images/visacard.png" alt="visa" title="visa" class="img-responsive"></a>
+										</li>
+										<li>
+											<a href="#"><img src="../assets/images/master.png" alt="master" title="master" class="img-responsive"></a>
+										</li>
+										<li>
+											<a href="#"><img src="../assets/images/discovers.png" alt="discover" title="discover" class="img-responsive"></a>
+										</li>
+										<li>
+											<a href="#"><img src="../assets/images/pay.png" alt="paypal" title="paypal" class="img-responsive"></a>
+										</li>
+									</ul>
+								</div>
+								<div class="form-group">	
+									<div class="col-sm-6">
+										<input class="form-control" id="input-card" placeholder="card holder name" value="" name="email" required="" type="text">
+									</div>
+									<div class="col-sm-6">
+										<input class="form-control" id="input-expiry" placeholder="card number" value="" name="email" required="" type="text">
+									</div>
+								</div>	
+								<div class="form-group">
+									<label>end date</label>
+									<div class="col-sm-3">
+										<select class="selectpicker form-control bs-select-hidden">
+											<option selected="" value="0">mm</option>
+											<option value="1">Jan</option>
+											<option value="2">Feb</option>
+											<option value="2">March</option>
+											<option value="2">April</option>
+											<option value="2">May</option>
+										</select>
+									</div>
+									<div class="col-sm-3">
+										<select class="selectpicker form-control bs-select-hidden">
+											<option selected="" value="0">year</option>
+											<option value="1">2001</option>
+											<option value="2">2002</option>
+											<option value="2">2003</option>
+											<option value="2">2004</option>
+											<option value="2">2005</option>
+										</select>
+									</div>
+									<div class="col-sm-2">
+										<input class="form-control" id="input-cvv" placeholder="cvv" value="" name="email" required="" type="text">
+									</div>
+								</div>	
+							</fieldset>
+						</form>
+						<div class="col-md-12 col-sm-12 col-xs-12 padd0">
+							<div class="buttons pull-left">
+								<button type="button" class="btn-primary">shopping cart</button>
+							</div>
+							<div class="buttons pull-right">
+								<button type="button" class="btn-primary">place your order</button>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+<!-- cart end here -->
+
+
+<!-- newsletter start here -->
+<div id="newsletter">
+	<div class="container">
+		<div class="row">
+			<div id="subscribe">
+				<form class="form-horizontal" name="subscribe">
+					<div class="col-sm-7"> 
+						<div class="input-group">
+							<span class="news">newsletter</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis lorem augue, at quam finibus eget.</p>
+						</div>
+					</div>
+					<div class="col-sm-5 form-group">
+						<div class="input-group">
+							<input  value="" name="subscribe_email" id="subscribe_email" placeholder="Email" type="text">
+							<button class="btn btn-news" type="submit" value="submit">Send</button>
+						</div>
+					</div>
+				</form>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- newsletter end here -->
+
+
+<!-- footer start here -->
+<footer>
+	<div class="container">
+		<div class="row inner">
+			<div class="col-sm-3">
+				<h5>my account</h5>
+				<ul class="list-unstyled">
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Order History</a></li>
+					<li><a href="#">Wishlist</a></li>
+					<li><a href="#">Newsletter</a></li>
+					<li><a href="reservation.html">My Reservation</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h5>Information</h5>
+				<ul class="list-unstyled">
+					<li><a href="about_us.html">About us</a></li>
+					<li><a href="#">Delivery Information</a></li>
+					<li><a href="contact_us.html">Contact us</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h5>Working Time</h5>
+				<ul class="list-unstyled">
+					<li>Monday - Friday : 9 am to 12 am.</li>
+					<li>Saturday - Sunday : 24 Hour Open</li>
+					<li>Breakfast : 7 am to 12 pm</li>
+					<li>Lunch : 12 pm to 7 pm</li>
+					<li>Dinner : 7 am to 12 am</li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h5>Working Time</h5>
+				<ul class="list-unstyled contact">
+					<li><a href="#"><i class="icofont icofont-social-google-map"></i> 123 St 3, Restaurant Food & Drinks, Near Bala Ji Chownk, Ludhiana, INDIA</a></li>
+					<li><a href="#"><i class="icofont icofont-phone"></i>1800 123 0000, +91 123457890</a></li>
+					<li><a href="#"><i class="icofont icofont-ui-message"></i>Info@restaurant.com</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row powered">
+			<div class="col-sm-12">
+				<hr>
+			</div>
+			<div class="col-sm-3">
+				<img src="../assets/images/logo.png" class="img-responsive" title="logo" alt="logo">
+			</div>
+			<div class="col-sm-6 text-center">
+				<p>Copyright © <span>Restaurant Food & Drinks</span> 2017. All Rights Reserved.</p>
+			</div>
+			<div class="col-sm-3 text-right">
+				<ul class="list-inline social">
+					<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+					<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+					<li><a href="https://in.pinterest.com/" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+					<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/" target="_blank"><i class="icofont icofont-social-youtube-play"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer end here -->
+
+<!-- jquery -->
+<script src="../assets/js/jquery.2.1.1.min.js" type="text/javascript"></script>
+<!-- bootstrap js -->
+<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+<!--bootstrap select-->
+<script src="../assets/js/bootstrap-select.js" type="text/javascript"></script>
+<!--internal js-->
+<script src="../assets/js/internal.js" type="text/javascript"></script>
+<!-- owlcarousel js -->
+<script src="../assets/js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<!--Gallery js code-->
+<script src="../assets/js/photo-gallery.js" type="text/javascript"></script>
+</body>
+</html>
+

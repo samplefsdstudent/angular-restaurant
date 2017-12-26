@@ -1,0 +1,108 @@
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: ;
+  display: none;
+  max-width: ;
+  padding: 1px;
+  font-size: ;
+  background-color: ;
+  background-clip: padding-box;
+  border: 1px solid ;
+  border-radius: ;
+}
+.popover.top {
+  margin-top: -;
+}
+.popover.right {
+  margin-left: ;
+}
+.popover.bottom {
+  margin-top: ;
+}
+.popover.left {
+  margin-left: -;
+}
+.popover-title {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: ;
+  background-color: ;
+  border-radius:  - 1  - 1 0 0;
+}
+.popover-content {
+  padding: 9px 14px;
+}
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.popover > .arrow {
+  border-width: ;
+}
+.popover > .arrow:after {
+  border-width: ;
+  content: "";
+}
+.popover.top > .arrow {
+  left: 50%;
+  margin-left: -;
+  border-bottom-width: 0;
+  border-top-color: ;
+  bottom: -;
+}
+.popover.top > .arrow:after {
+  content: " ";
+  bottom: 1px;
+  margin-left: -;
+  border-bottom-width: 0;
+  border-top-color: ;
+}
+.popover.right > .arrow {
+  top: 50%;
+  left: -;
+  margin-top: -;
+  border-left-width: 0;
+  border-right-color: ;
+}
+.popover.right > .arrow:after {
+  content: " ";
+  left: 1px;
+  bottom: -;
+  border-left-width: 0;
+  border-right-color: ;
+}
+.popover.bottom > .arrow {
+  left: 50%;
+  margin-left: -;
+  border-top-width: 0;
+  border-bottom-color: ;
+  top: -;
+}
+.popover.bottom > .arrow:after {
+  content: " ";
+  top: 1px;
+  margin-left: -;
+  border-top-width: 0;
+  border-bottom-color: ;
+}
+.popover.left > .arrow {
+  top: 50%;
+  right: -;
+  margin-top: -;
+  border-right-width: 0;
+  border-left-color: ;
+}
+.popover.left > .arrow:after {
+  content: " ";
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: ;
+  bottom: -;
+}

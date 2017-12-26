@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Blog Detail</title>
+<!-- Bootstrap stylesheet -->
+<link href="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+
+<!-- icofont -->
+<link href="../assets/css/icofont/icofont.css" rel="stylesheet" type="text/css" />
+<!-- crousel css -->
+<link href="../assets/js/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+<!--bootstrap select-->
+<link href="../assets/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+<!-- stylesheet -->
+<link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- header start here-->
+<header>
+	<!--top start here -->
+	<div class="top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12">
+					<ul class="list-inline pull-left icon">
+						<li><a href="contact_us.html"><i class="icofont icofont-ui-message"></i> Email : info@restaurant.com</a></li>
+						<li><a href="contact_us.html"><i class="icofont icofont-phone"></i> Phone : 123 456 7890</a></li>
+						<li><a href="shoppingcart.html"><i class="icofont icofont-cart-alt"></i> Cart</a></li>
+					</ul>	
+					<ul class="list-inline pull-right  icon">
+						<li>
+							<form method="post" enctype="multipart/form-data" id="form-language">
+								<div class="btn-group">
+									<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+										<i class="icofont icofont-globe"></i>Language : <span class="name"><span class="hidden-xs">English</span> <i class="icofont icofont-caret-down"></i></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="javascript:;">English</a></li>
+									</ul>
+								</div>
+							</form>
+						</li>
+						<li>
+							<ul class="list-inline social">
+								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+								<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+								<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+								<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+								<li><a href="https://in.pinterest.com/" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+								<li><a href="https://www.youtube.com/" target="_blank"><i class="icofont icofont-social-youtube-play"></i></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--top end here -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-12">
+				<div id="logo">
+					<a href="../index.html"><img class="img-responsive" src="../assets/images/logo.png" alt="logo" title="logo" /></a>
+				</div>
+			</div>
+				
+			<div class="col-md-7 col-sm-7 col-xs-12 paddleft">
+				<!-- menu start here -->
+				<div id="menu">	
+					<nav class="navbar">
+						<div class="navbar-header">
+							<span class="menutext visible-xs">Menu</span>
+							<button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="btn btn-navbar navbar-toggle" type="button"><i class="icofont icofont-navigation-menu"></i></button>
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse padd0">
+							<ul class="nav navbar-nav text-right">
+								<li><a href="../index.html">home</a></li>
+								<li><a href="about_us.html">about us</a></li>
+								<li><a href="our_menu.html">Our Menu</a></li>
+								<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MORE <i class="icofont icofont-caret-down"></i></a>
+									<div class="dropdown-menu repeating">
+										<div class="dropdown-inner">
+											<ul class="list-unstyled">
+												<li><a href="our_blog.html">Blogs</a></li>
+												<li><a href="testimonial.html">Testimonials</a></li>
+												<li><a href="our_gallery.html">Gallery</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="shop.html">Shops</a></li>
+								<li><a href="search.html">Search</a></li>
+								<li><a href="contact_us.html">contact us</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<!-- menu end here -->
+			</div>
+			
+			<div class="col-md-2 col-sm-2 col-xs-12 button-top paddleft">
+				<button class="btn-primary" type="button" onclick="location.href='reservation.html'">book your table</button>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- header end here -->
+
+<!-- bread-crumb start here -->
+<div class="bread-crumb">
+	<img src="../assets/images/banner_top.jpg" class="img-responsive" alt="banner-top" title="banner-top">
+	<div class="container">
+		<div class="matter">
+			<h2>our Blog</h2>
+			<ul class="list-inline">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="our_blog.html">our blog</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- bread-crumb end here -->
+
+<!-- blog start here -->	
+<div class="blog-detail">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+				<div class="left-box">
+					<div class="search">
+						<form class="form-horizontal" method="post">
+							<fieldset>
+								<div class="form-group">
+									<input name="s" value="" class="form-control" placeholder="Search" type="text">
+								</div>
+								<button type="submit" value="submit" class="btn"><i class="icofont icofont-search"></i></button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="left-box">
+					<h6>RECENT BLOG POSTS</h6>
+					<div class="latest">
+						<ul class="list-unstyled">
+							<li>
+								<img src="../assets/images/blog-detail/img1.jpg" class="img-responsive" alt="image" title="image">
+								<div class="caption">
+									<h3>Blog Title Here</h3>
+									<p class="test">May 25, 2017</p>
+									<p class="desc">Lorem ipsum dolor sit...</p>
+								</div>
+							</li>
+							<li>
+								<img src="../assets/images/blog-detail/img2.jpg" class="img-responsive" alt="image" title="image">
+								<div class="caption">
+									<h3>Blog Title Here</h3>
+									<p class="test">May 25, 2017</p>
+									<p class="desc">Lorem ipsum dolor sit...</p>
+								</div>
+							</li>
+							<li>
+								<img src="../assets/images/blog-detail/img3.jpg" class="img-responsive" alt="image" title="image">
+								<div class="caption">
+									<h3>Blog Title Here</h3>
+									<p class="test">May 25, 2017</p>
+									<p class="desc">Lorem ipsum dolor sit...</p>
+								</div>
+							</li>
+							<li>
+								<img src="../assets/images/blog-detail/img4.jpg" class="img-responsive" alt="image" title="image">
+								<div class="caption">
+									<h3>Blog Title Here</h3>
+									<p class="test">May 25, 2017</p>
+									<p class="desc">Lorem ipsum dolor sit...</p>
+								</div>
+							</li>
+							<li>
+								<img src="../assets/images/blog-detail/img5.jpg" class="img-responsive" alt="image" title="image">
+								<div class="caption">
+									<h3>Blog Title Here</h3>
+									<p class="test">May 25, 2017</p>
+									<p class="desc">Lorem ipsum dolor sit...</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="left-box">
+					<h6>GALLRY</h6>
+					<div class="gallery">
+						<ul class="list-inline">
+							<li><img src="../assets/images/blog-detail/galery1.jpg" alt="img" title="img" class="img-responsive" /></li>
+							<li><img src="../assets/images/blog-detail/galery2.jpg" alt="img" title="img" class="img-responsive" /></li>
+							<li><img src="../assets/images/blog-detail/galery3.jpg" alt="img" title="img" class="img-responsive" /></li>
+							<li><img src="../assets/images/blog-detail/galery4.jpg" alt="img" title="img" class="img-responsive" /></li>
+							<li><img src="../assets/images/blog-detail/galery5.jpg" alt="img" title="img" class="img-responsive" /></li>
+							<li><img src="../assets/images/blog-detail/galery6.jpg" alt="img" title="img" class="img-responsive" /></li>
+							<li><img src="../assets/images/blog-detail/galery7.jpg" alt="img" title="img" class="img-responsive" /></li>
+							<li><img src="../assets/images/blog-detail/galery8.jpg" alt="img" title="img" class="img-responsive" /></li>
+							<li><img src="../assets/images/blog-detail/galery9.jpg" alt="img" title="img" class="img-responsive" /></li>
+						</ul>
+					</div>
+				</div>
+				<div class="left-box">
+					<h6>TAGS</h6>
+					<div class="tag">
+						<ul class="list-inline">
+							<li><a href="#">Pizza</a></li>
+							<li><a href="#">Burger</a></li>
+							<li><a href="#">Breakfast</a></li>
+							<li><a href="#">Lunch</a></li>
+							<li><a href="#">Dinner</a></li>
+							<li><a href="#">Fast Food</a></li>
+							<li><a href="#">Tandoori Chicken</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-9 col-sm-9 col-lg-9 col-xs-12">
+				<div class="blogs owl-carousel">
+					<div class="item">
+						<div class="image">
+							<a href="#"><img src="../assets/images/blog-detail/big.jpg" alt="blog-big" title="blog-big" class="img-responsive" /></a>
+						</div>
+						<h4>Blog Title Here</h4>
+						<p class="text">May 15, 2017 / By admin / 3 comments</p>
+						<p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Duis eu tristique elit.</p>
+						<p class="des">Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin.</p>
+						<p class="des2">Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin.</p>
+						<p class="des">Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin.</p>
+					
+						<div class="link">
+							<ul class="list-inline pull-left icon">
+								<li>Tags : </li>
+								<li><a href="#">Life Style, </a></li>
+								<li><a href="#">Tasty, </a></li>
+								<li><a href="#">Yummy</a></li>
+							</ul>
+							<ul class="list-inline pull-right social">
+								<li>Share : </li>
+								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+								<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+								<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+								<li><a href="https://in.pinterest.com/" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+								<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+								<li><a href="https://www.youtube.com/" target="_blank"><i class="icofont icofont-social-youtube-play"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<a href="#"><img src="../assets/images/blog-detail/big.jpg" alt="blog-big" title="blog-big" class="img-responsive" /></a>
+						</div>
+						<h4>Blog Title Here</h4>
+						<p class="text">May 15, 2017 / By admin / 3 comments</p>
+						<p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Duis eu tristique elit.</p>
+						<p class="des">Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin.</p>
+						<p class="des2">Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin.</p>
+						<p class="des">Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin.</p>
+					
+						<div class="link">
+							<ul class="list-inline pull-left icon">
+								<li>Tags : </li>
+								<li><a href="#">Life Style, </a></li>
+								<li><a href="#">Tasty, </a></li>
+								<li><a href="#">Yummy</a></li>
+							</ul>
+							<ul class="list-inline pull-right social">
+								<li>Share : </li>
+								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+								<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+								<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+								<li><a href="https://in.pinterest.com/" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+								<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+								<li><a href="https://www.youtube.com/" target="_blank"><i class="icofont icofont-social-youtube-play"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<a href="#"><img src="../assets/images/blog-detail/big.jpg" alt="blog-big" title="blog-big" class="img-responsive" /></a>
+						</div>
+						<h4>Blog Title Here</h4>
+						<p class="text">May 15, 2017 / By admin / 3 comments</p>
+						<p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Duis eu tristique elit.</p>
+						<p class="des">Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin.</p>
+						<p class="des2">Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin.</p>
+						<p class="des">Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin.</p>
+					
+						<div class="link">
+							<ul class="list-inline pull-left icon">
+								<li>Tags : </li>
+								<li><a href="#">Life Style, </a></li>
+								<li><a href="#">Tasty, </a></li>
+								<li><a href="#">Yummy</a></li>
+							</ul>
+							<ul class="list-inline pull-right social">
+								<li>Share : </li>
+								<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+								<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+								<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+								<li><a href="https://in.pinterest.com/" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+								<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+								<li><a href="https://www.youtube.com/" target="_blank"><i class="icofont icofont-social-youtube-play"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="comment">
+					<h3>COMMENTS (03)</h3>
+					<ul class="list-unstyled">
+						<li>
+							<img src="../assets/images/blog-detail/01.jpg" alt="img" title="img" class="img-responsive">
+							<div class="caption">
+								<h5>John Doe</h5>
+								<span>2 days ago <a href="#" class="pull-right"><i class="icofont icofont-reply"></i> Reply</a></span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</li>	
+						<li>
+							<img src="../assets/images/blog-detail/02.jpg" alt="img" title="img" class="img-responsive">
+							<div class="caption">
+								<h5>John Doe</h5>
+								<span>2 days ago <a href="#" class="pull-right"><i class="icofont icofont-reply"></i> Reply</a></span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</li>
+						<li>
+							<img src="../assets/images/blog-detail/02.jpg" alt="img" title="img" class="img-responsive">
+							<div class="caption">
+								<h5>John Doe</h5>
+								<span>2 days ago <a href="#" class="pull-right"><i class="icofont icofont-reply"></i> Reply</a></span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</li>
+					</ul>
+					<h3>POST A COMMENT</h3>
+					<form class="form-horizontal" method="post">
+						<fieldset>
+							<div class="form-group">
+								<div class="col-sm-6">
+									<input class="form-control" placeholder="Name*" id="input-name" value="" name="jobname" required="" type="text">
+								</div>
+								<div class="col-sm-6">
+									<input class="form-control" id="input-email" placeholder="Email*" value="" name="email" required="" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<textarea class="form-control" id="input-enquiry" rows="10" name="enquiry" placeholder="Write a comment" required=""></textarea>
+								</div>
+							</div>
+							<button type="submit" value="Submit" class="btn btn-primary btnus">Post Comment</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- blog end here -->
+
+
+<!-- newsletter start here -->
+<div id="newsletter">
+	<div class="container">
+		<div class="row">
+			<div id="subscribe">
+				<form class="form-horizontal" name="subscribe">
+					<div class="col-sm-7"> 
+						<div class="input-group">
+							<span class="news">newsletter</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis lorem augue, at quam finibus eget.</p>
+						</div>
+					</div>
+					<div class="col-sm-5 form-group">
+						<div class="input-group">
+							<input  value="" name="subscribe_email" id="subscribe_email" placeholder="Email" type="text">
+							<button class="btn btn-news" type="submit" value="submit">Send</button>
+						</div>
+					</div>
+				</form>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- newsletter end here -->
+
+
+<!-- footer start here -->
+<footer>
+	<div class="container">
+		<div class="row inner">
+			<div class="col-sm-3">
+				<h5>my account</h5>
+				<ul class="list-unstyled">
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Order History</a></li>
+					<li><a href="#">Wishlist</a></li>
+					<li><a href="#">Newsletter</a></li>
+					<li><a href="reservation.html">My Reservation</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h5>Information</h5>
+				<ul class="list-unstyled">
+					<li><a href="about_us.html">About us</a></li>
+					<li><a href="#">Delivery Information</a></li>
+					<li><a href="contact_us.html">Contact us</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h5>Working Time</h5>
+				<ul class="list-unstyled">
+					<li>Monday - Friday : 9 am to 12 am.</li>
+					<li>Saturday - Sunday : 24 Hour Open</li>
+					<li>Breakfast : 7 am to 12 pm</li>
+					<li>Lunch : 12 pm to 7 pm</li>
+					<li>Dinner : 7 am to 12 am</li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h5>Working Time</h5>
+				<ul class="list-unstyled contact">
+					<li><a href="#"><i class="icofont icofont-social-google-map"></i> 123 St 3, Restaurant Food & Drinks, Near Bala Ji Chownk, Ludhiana, INDIA</a></li>
+					<li><a href="#"><i class="icofont icofont-phone"></i>1800 123 0000, +91 123457890</a></li>
+					<li><a href="#"><i class="icofont icofont-ui-message"></i>Info@restaurant.com</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row powered">
+			<div class="col-sm-12">
+				<hr>
+			</div>
+			<div class="col-sm-3">
+				<img src="../assets/images/logo.png" class="img-responsive" title="logo" alt="logo">
+			</div>
+			<div class="col-sm-6 text-center">
+				<p>Copyright © <span>Restaurant Food & Drinks</span> 2017. All Rights Reserved.</p>
+			</div>
+			<div class="col-sm-3 text-right">
+				<ul class="list-inline social">
+					<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+					<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+					<li><a href="https://in.pinterest.com/" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+					<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/" target="_blank"><i class="icofont icofont-social-youtube-play"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer end here -->
+
+<!-- jquery -->
+<script src="../assets/js/jquery.2.1.1.min.js" type="text/javascript"></script>
+<!-- bootstrap js -->
+<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+<!--bootstrap select-->
+<script src="../assets/js/bootstrap-select.js" type="text/javascript"></script>
+<!--internal js-->
+<script src="../assets/js/internal.js" type="text/javascript"></script>
+<!-- owlcarousel js -->
+<script src="../assets/js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<!--Gallery js code-->
+<script src="../assets/js/photo-gallery.js" type="text/javascript"></script>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: ;
+  border: 1px solid ;
+  border-radius: ;
+}
+.well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0,0,0,0.15);
+}
+.well-lg {
+  padding: 24px;
+  border-radius: ;
+}
+.well-sm {
+  padding: 9px;
+  border-radius: ;
+}
