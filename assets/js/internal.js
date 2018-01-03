@@ -15,6 +15,7 @@ function loadscroler(){
 		return false;
 	});
 }
+
 $(document).on('ready',function(){ 
 	"use strict";
 	loadscroler();
