@@ -44,7 +44,7 @@
 [ Body ]
 -------------*/
 select.bs-select-hidden, select.selectpicker {
-    display: block;
+    display: block!important;
 }
 
 option {
