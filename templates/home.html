@@ -19,8 +19,8 @@
 			<img src="assets/images/logo1.png" alt="logo1" title="logo1" class="img-responsive" />
 			<h4>good food & good health</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Mauris a sodales mi, eget lobortis nulla.</p>
-			<button type="button" class="btn-primary" onclick="location.href='templates/our_menu.html'">our menu</button>
-			<button type="button" class="btn-primary" onclick="location.href='templates/shop.html'">PURCHASE NOW</button> 
+			<button type="button" class="btn-primary" onclick="location.href='/our-menu'">our menu</button>
+			<button type="button" class="btn-primary" onclick="location.href='/shops'">PURCHASE NOW</button> 
 		</div>
 	</div>	
 	<!-- slide-detail end here -->
@@ -77,7 +77,7 @@
 			</div>
 			<div class="col-sm-7 col-xs-12">
 				<p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.</p>
-				<button type="button" class="btn-primary" onclick="location.href='templates/about_us.html'">read more <i class="icofont icofont-curved-double-right"></i></button>
+				<button type="button" class="btn-primary" onclick="location.href='/about-us'">read more <i class="icofont icofont-curved-double-right"></i></button>
 			</div>
 		</div>
 	</div>
@@ -154,29 +154,29 @@
 				<hr>
 			</div>
 			<div class="col-sm-12 col-xs-12">
-				<form method="post" enctype="multipart/form-data" class="row" ng-init="reserveData">
+				<form ng-submit="doReservation(reserveData)" role="form" class="row">
 					<div class="form-group">
 						<div class="col-sm-4">
-							<i class="icofont icofont-ui-user"></i><input name="name" placeholder="name" id="input-name" ng-model="reserveData.name" class="form-control" type="text">
+							<i class="icofont icofont-ui-user"></i><input name="name" placeholder="name" id="input-name" ng-model="reserveData.name" class="form-control" type="text" required/>
 						</div>
 						<div class="col-sm-4">
-							<i class="icofont icofont-ui-message"></i><input name="email" placeholder="email" ng-model="reserveData.email"  id="input-email" class="form-control" type="text">
+							<i class="icofont icofont-ui-message"></i><input name="email" placeholder="email" ng-model="reserveData.email"  id="input-email" class="form-control" type="email" required/>
 						</div>
 						<div class="col-sm-4">
-							<i class="icofont icofont-phone"></i><input name="mobile" placeholder="mobile number" ng-model="reserveData.mobile"  id="input-mobile" class="form-control" type="text">
+							<i class="icofont icofont-phone"></i><input name="mobile" placeholder="mobile number" ng-model="reserveData.mobile"  id="input-mobile" class="form-control" type="text" min="0" required/>
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-4">
-							<i class="icofont icofont-ui-calendar"></i><input name="date" placeholder="date" ng-model="reserveData.date"  id="input-date" class="form-control" type="text">
+							<i class="icofont icofont-ui-calendar"></i><input name="date" placeholder="date" ng-model="reserveData.date"  id="input-date" class="form-control" type="text" required/>
 						</div> 
 						<div class="col-sm-4">
-							<i class="icofont icofont-clock-time"></i><input name="time" placeholder="time" ng-model="reserveData.time"  id="input-time" class="form-control" type="text">
+							<i class="icofont icofont-clock-time"></i><input name="time" placeholder="time" ng-model="reserveData.time"  id="input-time" class="form-control" type="text" required/>
 						</div>
 						<div class="col-sm-4">
 							<i class="fa fa-key"></i>
-							<select class="selectpicker form-control bs-select-hidden" ng-model="reserveData.no_persons" >
-								<option selected="" value="0">number of persons</option>
+							<select class="selectpicker form-control bs-select-hidden" ng-model="$parent.reserveData.no_persons">
+								<option value="0" disabled="true">number of persons</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="2">3</option>
@@ -185,10 +185,10 @@
 							</select>
 						</div>
 					</div>
+					<div class="text-center">
+						<button type="submit" class="btn-primary">book now</button>
+					</div>	
 				</form>
-				<div class="text-center">
-					<button type="button" class="btn-primary" ng-click="doReservation(reserveData)">book now</button>
-				</div>	
 			</div>
 		</div>
 	</div>

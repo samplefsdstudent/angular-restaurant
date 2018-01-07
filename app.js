@@ -12,7 +12,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
     })
     .when('/blog-details/:id', {
         templateUrl : 'templates/blog_details.html',
-        controller : 'blog_detailsCtrl'
+        controller : 'blog_detailCtrl'
     })
     .when('/contact-us', {
         templateUrl : 'templates/contact_us.html',

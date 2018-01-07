@@ -6,15 +6,15 @@
 			<div class="crumb">
 				<h2>Our Shop</h2>
 				<ul class="list-inline">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="shop.html">Our Shop</a></li>
+					<li><a href="/">HOME</a></li>
+					<li><a href="/shops">Our Shop</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-6 order col-sm-offset-3">
 				<form class="form-horizontal search-icon" method="post">
 					<fieldset>
 						<div class="form-group">
-							<input name="s" value="" placeholder="Search keyword" class="form-control" type="text">
+							<input name="s" ng-model="filter" placeholder="Search keyword" class="form-control" type="text">
 						</div>
 						<button type="submit" value="submit" class="btn"><i class="icofont icofont-search"></i>search</button>
 					</fieldset>
@@ -52,7 +52,7 @@
 						<form class="form-horizontal" method="post">
 							<fieldset>
 								<div class="form-group">
-									<input name="s" value="" class="form-control" placeholder="Search Your Fav Food" type="text">
+									<input name="s" value="" class="form-control" placeholder="Search a Shop" type="text">
 									<button type="submit" value="submit" class="btn"><i class="icofont icofont-search"></i></button>
 								</div>
 								<ul class="list-unstyled">
@@ -112,23 +112,6 @@
 								</label>
 							</li>
 						</ul>
-					</div>
-					<div class="popular">
-						<h3>popular tags <a href="#" class="pull-right"><i class="icofont icofont-plus"></i></a></h3>
-						<ul class="list-inline">
-							<li><a href="#">South Indian Food <i class="icofont icofont-close"></i></a></li>
-							<li><a href="#">Fast Food <i class="icofont icofont-close"></i></a></li>
-							<li><a href="#">Thai <i class="icofont icofont-close"></i></a></li>
-						</ul>
-					</div>
-					<div class="price">
-						<h3>price raNGE</h3>
-						<div class="price-filter">
-							<span class="min">$35</span>
-							<a href="#" class="one slider-handle"></a>
-							<div class="price-range"><div class="bg"></div></div>
-							<p>$5 <span class="pull-right">$100</span></p>
-						</div>
 					</div>
 					<div class="rating">
 						<h3>rating</h3>

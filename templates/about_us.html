@@ -5,8 +5,8 @@
 		<div class="matter">
 			<h2>about us</h2>
 			<ul class="list-inline">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about_us.html">about us</a></li>
+				<li><a href="/">HOME</a></li>
+				<li><a href="/about-us">about us</a></li>
 			</ul>
 		</div>
 	</div>
@@ -99,61 +99,16 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Mauris a sodales mi, eget lobortis nulla. </p>
 				<hr>
 			</div>
-			<div class="col-sm-3 col-xs-12">
+			<div class="col-sm-3 col-xs-12" ng-repeat="member in members track by $index">
 				<div class="box">
-					<img src="../assets/images/about/1.jpg" class="img-responsive" alt="icon" title="icon" />
+					<img ng-src="{{member.image}}" class="img-responsive" alt="icon" title="icon" />
 					<div class="caption text-center">
-						<h4>John Doe</h4>
+						<h4>{{member.name}}</h4>
 						<ul class="list-inline social">
-							<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
-							<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
-							<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
-							<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
-						</ul>
-						<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra risus mauris, eget tristique augue. </p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<div class="box">
-					<img src="../assets/images/about/2.jpg" class="img-responsive" alt="icon" title="icon" />
-					<div class="caption text-center">
-						<h4>John Doe</h4>
-						<ul class="list-inline social">
-							<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
-							<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
-							<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
-							<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
-						</ul>
-						<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra risus mauris, eget tristique augue. </p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<div class="box">
-					<img src="../assets/images/about/3.jpg" class="img-responsive" alt="icon" title="icon" />
-					<div class="caption text-center">
-						<h4>John Doe</h4>
-						<ul class="list-inline social">
-							<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
-							<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
-							<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
-							<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
-						</ul>
-						<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra risus mauris, eget tristique augue. </p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<div class="box">
-					<img src="../assets/images/about/4.jpg" class="img-responsive" alt="icon" title="icon" />
-					<div class="caption text-center">
-						<h4>John Doe</h4>
-						<ul class="list-inline social">
-							<li><a href="https://www.facebook.com/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
-							<li><a href="https://twitter.com/" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
-							<li><a href="https://plus.google.com/" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
-							<li><a href="https://www.instagram.com/" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+							<li><a href="{{member.facebook_url}}" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+							<li><a href="{{member.twitter_url}}" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+							<li><a href="{{member.plus_google_url}}" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+							<li><a href="{{member.insta_url}}" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
 						</ul>
 						<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra risus mauris, eget tristique augue. </p>
 					</div>

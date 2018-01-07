@@ -1,6 +1,9 @@
 angular.module('myApp').controller('homeCtrl', ['$routeParams','$scope', function($routeParams, $scope){
 
 	$scope.filter = 'all';
+	$scope.reserveData = {
+		no_persons : 0
+	};
 	$scope.recipes = [{
 		name : "Food Title Here",
 		image : "assets/images/our-menu/01.jpg",
@@ -375,9 +378,7 @@ angular.module('myApp').controller('homeCtrl', ['$routeParams','$scope', functio
 		type : "dish"
 	}];
 
-	console.log($scope.recipes);
-
 	$scope.doReservation = function(data){
-
+		alert('Hi ' + data.name + ' ,Booking is done!')
 	}
 }])
