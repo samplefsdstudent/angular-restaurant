@@ -43,6 +43,14 @@
 /*----------
 [ Body ]
 -------------*/
+select.bs-select-hidden, select.selectpicker {
+    display: block;
+}
+
+option {
+	color: #555;
+}
+
 body{
 	font-family: 'segoeui';
 	font-weight:400;
