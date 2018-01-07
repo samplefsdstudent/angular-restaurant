@@ -51,6 +51,11 @@ option {
 	color: #555;
 }
 
+.form-inline .bootstrap-select.btn-group, .form-horizontal .bootstrap-select.btn-group, .form-group .bootstrap-select.btn-group {
+    margin-bottom: 0;
+    display: none!important;
+}
+
 body{
 	font-family: 'segoeui';
 	font-weight:400;
