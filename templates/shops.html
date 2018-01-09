@@ -175,7 +175,7 @@
 					<div class="product-layout product-grid" ng-class="class" ng-repeat="shop in shops track by $index">
 						<div class="product-thumb">
 							<div class="image">
-								<a href="shopdetail.html"><img ng-src="{{shop.image}}" alt="image" title="image" class="img-responsive" /></a>
+								<a href="/shop-details/{{$index + 1}}"><img ng-src="{{shop.image}}" alt="image" title="image" class="img-responsive" /></a>
 								<div class="hoverbox">
 									<button type="button" class="btn-primary" ng-click="location.href='shoppingcart.html'">order now</button>
 								</div>
