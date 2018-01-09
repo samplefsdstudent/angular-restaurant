@@ -138,9 +138,9 @@
 				<div class="row sort">
 					<div class="col-sm-2 list hidden-xs">
 						<div class="btn-group btn-group-sm">
-							<button type="button" id="grid-view" ng-click="change(2)" class="btn btn-default btngrid" data-toggle="tooltip" title="Grid"><i class="icofont icofont-brand-microsoft"></i></button>
+							<button type="button" ng-class="(grid) ? 'active' : ''" id="grid-view" ng-click="change(2)" class="btn btn-default btngrid" data-toggle="tooltip" title="Grid"><i class="icofont icofont-brand-microsoft"></i></button>
 							
-							<button  type="button" id="list-view" ng-click="change(1)" class="btn btn-default btngrid" data-toggle="tooltip" title="List"><i class="icofont icofont-listine-dots"></i></button>
+							<button  type="button" ng-class="(list) ? 'active' : ''" id="list-view" ng-click="change(1)" class="btn btn-default btngrid" data-toggle="tooltip" title="List"><i class="icofont icofont-listine-dots"></i></button>
 						</div>
 					</div>
 					<div class="col-sm-3">
@@ -177,7 +177,7 @@
 							<div class="image">
 								<a href="shopdetail.html"><img ng-src="{{shop.image}}" alt="image" title="image" class="img-responsive" /></a>
 								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
+									<button type="button" class="btn-primary" ng-click="location.href='shoppingcart.html'">order now</button>
 								</div>
 							</div>
 							<div class="caption">
@@ -191,7 +191,7 @@
 								</div>
 								<div class="price">${{shop.price}}</div>
 								<p>{{shop.description}}</p>
-								<button type="button" class="btn-primary" onclick="location.href='/shop-details/{{$index + 1}}'">order now</button>	
+								<button type="button" class="btn-primary" ng-click="location.href='/shop-details/{{$index + 1}}'">order now</button>	
 							</div>
 						</div>
 					</div>

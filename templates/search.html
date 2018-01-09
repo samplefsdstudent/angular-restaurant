@@ -71,7 +71,7 @@
 							<div class="image">
 								<a href="/shopping-cart/{{$index + 1}}"><img ng-src="{{product.name}}" alt="image" title="image" class="img-responsive" /></a>
 								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='/shopping-card/{{$index + 1}}'">order now</button>
+									<button type="button" class="btn-primary" ng-click="location.href='/shopping-card/{{$index + 1}}'">order now</button>
 								</div>
 							</div>
 							<div class="caption">
@@ -85,7 +85,7 @@
 								</div>
 								<div class="price">${{product.avg_price}}</div>
 								<p>{{product.description}}</p>
-								<button type="button" class="btn-primary" onclick="location.href='/shopping-cart/{{$index + 1}}'">order now</button>	
+								<button type="button" class="btn-primary" ng-click="location.href='/shopping-cart/{{$index + 1}}'">order now</button>	
 							</div>
 						</div>
 					</div>
