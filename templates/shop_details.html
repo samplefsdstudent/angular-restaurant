@@ -49,50 +49,13 @@
 				<div class="left">
 					<h4>SEARCH FILTERS</h4>
 					<div class="search">
+						<!-- search form start here -->
 						<form class="form-horizontal" method="post">
 							<fieldset>
 								<div class="form-group">
-									<input name="s" value="" class="form-control" placeholder="Search Your Fav Food" type="text">
+									<input name="s" value="" ng-model="filter" class="form-control" placeholder="Search Your Fav Food" type="text">
 									<button type="submit" value="submit" class="btn"><i class="icofont icofont-search"></i></button>
 								</div>
-								<ul class="list-unstyled">
-									<li>
-										<label class="check">
-											<input type="radio" name="payment" class="checkclass"/>
-											Sandwiches
-										</label>
-									</li>
-									<li>
-										<label class="check">
-											<input type="radio" name="payment" class="checkclass"/>
-											Fast Food
-										</label>
-									</li>
-									<li>
-										<label class="check">
-											<input type="radio" name="payment" class="checkclass"/>
-											Vegetarian
-										</label>
-									</li>
-									<li>
-										<label class="check">
-											<input type="radio" name="payment" class="checkclass"/>
-											Thai
-										</label>
-									</li>
-									<li>
-										<label class="check">
-											<input type="radio" name="payment" class="checkclass"/>
-											Non Veg
-										</label>
-									</li>
-									<li>
-										<label class="check">
-											<input type="radio" name="payment" class="checkclass"/>
-											Salads
-										</label>
-									</li>
-								</ul>
 							</fieldset>
 						</form>
 					</div>
@@ -101,34 +64,17 @@
 						<ul class="list-inline">
 							<li>
 								<label class="check">
-									<input type="radio" name="payment" class="checkclass"/>
+									<input type="radio" ng-model="order_type" value="Delivery" name="payment" class="checkclass"/>
 									Delivery
 								</label>
 							</li>
 							<li>
 								<label class="check">
-									<input type="radio" name="payment" class="checkclass"/>
+									<input type="radio" ng-model="order_type" value="Pickup" name="payment" class="checkclass"/>
 									Pickup
 								</label>
 							</li>
 						</ul>
-					</div>
-					<div class="popular">
-						<h3>popular tags <a href="#" class="pull-right"><i class="icofont icofont-plus"></i></a></h3>
-						<ul class="list-inline">
-							<li><a href="#">South Indian Food <i class="icofont icofont-close"></i></a></li>
-							<li><a href="#">Fast Food <i class="icofont icofont-close"></i></a></li>
-							<li><a href="#">Thai <i class="icofont icofont-close"></i></a></li>
-						</ul>
-					</div>
-					<div class="price">
-						<h3>price raNGE</h3>
-						<div class="price-filter">
-							<span class="min">$35</span>
-							<a href="#" class="one slider-handle"></a>
-							<div class="price-range"><div class="bg"></div></div>
-							<p>$5 <span class="pull-right">$100</span></p>
-						</div>
 					</div>
 					<div class="rating">
 						<h3>rating</h3>
@@ -136,59 +82,58 @@
 							<li>
 								<label class="check">
 									<input type="radio" name="payment" class="checkclass"/>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
 								</label>
 							</li>
 							<li>
 								<label class="check">
 									<input type="radio" name="payment" class="checkclass"/>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
 								</label>
 							</li>
 							<li>
 								<label class="check">
 									<input type="radio" name="payment" class="checkclass"/>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
 								</label>
 							</li>
 							<li>
 								<label class="check">
 									<input type="radio" name="payment" class="checkclass"/>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
 								</label>
 							</li>
 							<li>
 								<label class="check">
 									<input type="radio" name="payment" class="checkclass"/>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star" style="color:#FFA41F"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
+									<i class="icofont icofont-star" style="color:#b2b2b2"></i>
 								</label>
 							</li>
 						</ul>
-						
 					</div>
 				</div>
 			</div>
-			
+			<!-- search form end here -->
 			<div class="col-md-9 col-sm-9 col-xs-12">
 				<div class="row shopdetail">
 					<div class="col-sm-5 col-xs-12">

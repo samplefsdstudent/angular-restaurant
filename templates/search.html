@@ -11,14 +11,16 @@
 				</ul>
 			</div>
 			<div class="col-sm-6 order col-sm-offset-3">
+				<!-- search form start here -->
 				<form class="form-horizontal search-icon" method="post">
 					<fieldset>
 						<div class="form-group">
-							<input name="s" value="" placeholder="Search keyword" class="form-control" type="text">
+							<input name="s" value="" placeholder="Search keyword" ng-repeat="filter" class="form-control" type="text">
 						</div>
 						<button type="submit" value="submit" class="btn"><i class="icofont icofont-search"></i>search</button>
 					</fieldset>
 				</form>
+				<!-- search form end here -->
 				<ul class="list-inline text-center">
 					<li>
 						<i class="icofont icofont-fast-food"></i>
@@ -63,16 +65,17 @@
 				</div>
 				
 				<div class="row">
-					<div class="col-md-3 col-sm-4 col-xs-12">
+					<!-- ng-repeat on shops with filter 'filter' start here -->
+					<div class="col-md-3 col-sm-4 col-xs-12" ng-repeat="shop in shops filter : filter track by $index">
 						<div class="product-thumb">
 							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/01.jpg" alt="image" title="image" class="img-responsive" /></a>
+								<a href="/shop-details/{{$index + 1}}"><img ng-src="{{shop.image}}" alt="image" title="image" class="img-responsive" /></a>
 								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
+									<button type="button" class="btn-primary" onclick="location.href='/shop-details/{{$index + 1}}'">order now</button>
 								</div>
 							</div>
 							<div class="caption">
-								<h4>Product Title Here</h4>
+								<h4>{{shop.name}}</h4>
 								<div class="rating">
 									<i class="icofont icofont-star"></i>
 									<i class="icofont icofont-star"></i>
@@ -80,266 +83,13 @@
 									<i class="icofont icofont-star"></i>
 									<i class="icofont icofont-star"></i>
 								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
+								<div class="price">${{shop.avg_price}}</div>
+								<p>{{shop.description}}</p>
 								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
 							</div>
 						</div>
 					</div>
-									
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/02.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/03.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/02.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/04.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/05.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/06.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/05.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/07.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/08.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/09.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12">
-						<div class="product-thumb">
-							<div class="image">
-								<a href="shopdetail.html"><img src="../assets/images/shop/08.jpg" alt="image" title="image" class="img-responsive" /></a>
-								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>
-								</div>
-							</div>
-							<div class="caption">
-								<h4>Product Title Here</h4>
-								<div class="rating">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<div class="price">$20.00</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus.</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
-							</div>
-						</div>
-					</div>
+					<!-- ng-repeat on shops with filter 'filter' end here -->
 				</div>
 				
 				<div class="text-center">

@@ -22,10 +22,11 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Mauris a sodales mi, eget lobortis nulla.</p>
 				<hr>
 			</div>
-			<div class="col-sm-4 galery">
+			<!-- ng-repeat on images start here -->
+			<div class="col-sm-4 galery" ng-repeat="image in images track by $index">
 				<div class="product-thumb">
 					<div class="image">
-						<a href="#"><img src="../assets/images/gallery/01.jpg" alt="image" title="image" class="img-responsive" /></a>
+						<a href="#"><img ng-src="{{image.src}}" alt="image" title="image {{$index + 1}}" class="img-responsive" /></a>
 						<div class="hoverbox">
 							<div class="show">
 								<i class="icofont icofont-plus-circle"></i>
@@ -34,102 +35,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4 galery">
-				<div class="product-thumb">
-					<div class="image">
-						<a href="#"><img src="../assets/images/gallery/02.jpg" alt="image" title="image" class="img-responsive" /></a>
-						<div class="hoverbox">
-							<div class="show">
-								<i class="icofont icofont-plus-circle"></i>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 galery">
-				<div class="product-thumb">
-					<div class="image">
-						<a href="#"><img src="../assets/images/gallery/03.jpg" alt="image" title="image" class="img-responsive" /></a>
-						<div class="hoverbox">
-							<div class="show">
-								<i class="icofont icofont-plus-circle"></i>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 galery">
-				<div class="product-thumb">
-					<div class="image">
-						<a href="#"><img src="../assets/images/gallery/04.jpg" alt="image" title="image" class="img-responsive" /></a>
-						<div class="hoverbox">
-							<div class="show">
-								<i class="icofont icofont-plus-circle"></i>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 galery">
-				<div class="product-thumb">
-					<div class="image">
-						<a href="#"><img src="../assets/images/gallery/05.jpg" alt="image" title="image" class="img-responsive" /></a>
-						<div class="hoverbox">
-							<div class="show">
-								<i class="icofont icofont-plus-circle"></i>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 galery">
-				<div class="product-thumb">
-					<div class="image">
-						<a href="#"><img src="../assets/images/gallery/06.jpg" alt="image" title="image" class="img-responsive" /></a>
-						<div class="hoverbox">
-							<div class="show">
-								<i class="icofont icofont-plus-circle"></i>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 galery">
-				<div class="product-thumb">
-					<div class="image">
-						<a href="#"><img src="../assets/images/gallery/07.jpg" alt="image" title="image" class="img-responsive" /></a>
-						<div class="hoverbox">
-							<div class="show">
-								<i class="icofont icofont-plus-circle"></i>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 galery">
-				<div class="product-thumb">
-					<div class="image">
-						<a href="#"><img src="../assets/images/gallery/08.jpg" alt="image" title="image" class="img-responsive" /></a>
-						<div class="hoverbox">
-							<div class="show">
-								<i class="icofont icofont-plus-circle"></i>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 galery">
-				<div class="product-thumb">
-					<div class="image">
-						<a href="#"><img src="../assets/images/gallery/09.jpg" alt="image" title="image" class="img-responsive" /></a>
-						<div class="hoverbox">
-							<div class="show">
-								<i class="icofont icofont-plus-circle"></i>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
+			<!-- ng-repeat on images end here -->
 			<div class="text-center">
 				<button type="button" class="btn-primary">view more <i class="icofont icofont-curved-double-right"></i></button>
 			</div>

@@ -40,6 +40,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Mauris a sodales mi, eget lobortis nulla. </p>
 				<hr>
 			</div>
+			<!-- ng-repeat on services start here -->
 			<div class="col-sm-4 col-xs-12" ng-repeat="service in services track by $index"> 
 				<div class="box text-center">
 					<img ng-src="{{service.image}}" class="img-responsive" alt="icon" title="icon" />
@@ -47,6 +48,7 @@
 					<p>{{service.description}}</p>
 				</div>
 			</div>
+			<!-- ng-repeat on services end here -->
 			<div class="col-sm-12 col-xs-12 video">
 				<img src="../assets/images/about/Video_bg.jpg" class="img-responsive" alt="image" title="image" />
 			</div>
@@ -64,6 +66,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Mauris a sodales mi, eget lobortis nulla. </p>
 				<hr>
 			</div>
+			<!-- ng-repeat on members start here -->
 			<div class="col-sm-3 col-xs-12" ng-repeat="member in members track by $index">
 				<div class="box">
 					<img ng-src="{{member.image}}" class="img-responsive" alt="icon" title="icon" />
@@ -79,6 +82,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- ng-repeat on members end here -->
 		</div>
 	</div>
 </div>

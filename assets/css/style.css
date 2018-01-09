@@ -1878,13 +1878,6 @@ footer .powered .social li a:hover i{
 .shop .left .rating ul li:last-child .check{
 	margin:0px 0 0px;
 }
-.shop .left .rating ul li i{
-	color:#FFA41F;
-}
-.shop .left .rating ul li:nth-child(2) i:last-child, .shop .left .rating ul li:nth-child(3) i:nth-child(5), .shop .left .rating ul li:nth-child(3) i:last-child, .shop .left .rating ul li:nth-child(4) i:nth-child(4), .shop .left .rating ul li:nth-child(4) i:nth-child(5), .shop .left .rating ul li:nth-child(4) i:last-child, .shop .left .rating ul li:last-child i:nth-child(3), .shop .left .rating ul li:last-child i:nth-child(4), .shop .left .rating ul li:last-child i:nth-child(5), .shop .left .rating ul li:last-child i:last-child{
-	color:#b2b2b2;
-}
-
 .shop .product-thumb {
 	margin-bottom:50px;
 }
