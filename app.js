@@ -8,7 +8,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
     })
     .when('/about-us', {
         templateUrl : 'templates/about_us.html',
-        controller : 'homeCtrl'
+        controller : 'about_usCtrl'
     })
     .when('/blog-details/:id', {
         templateUrl : 'templates/blog_details.html',
