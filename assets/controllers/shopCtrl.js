@@ -21,7 +21,7 @@ angular.module('myApp').controller('shopCtrl', ['$routeParams', function($routeP
 			$scope.class = 'col-lg-4 col-md-4 col-sm-6 col-xs-12';
 		}
 	}
-	$scope.products = [{
+	$scope.shops = [{
 		image : "../assets/images/shop/01.jpg",
 		name : "Product 1",
 		rating : 4,
