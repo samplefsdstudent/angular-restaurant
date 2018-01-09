@@ -1,6 +1,6 @@
 angular.module('myApp').controller('searchCtrl', ['$routeParams', function($routeParams){
 	$scope.filter = '';
-	$scope.shops = [{
+	$scope.products = [{
 		image : "../assets/images/shop/01.jpg",
 		name : "Shop 1",
 		avg_price : "20.00",

@@ -66,16 +66,16 @@
 				
 				<div class="row">
 					<!-- ng-repeat on shops with filter 'filter' start here -->
-					<div class="col-md-3 col-sm-4 col-xs-12" ng-repeat="shop in shops filter : filter track by $index">
+					<div class="col-md-3 col-sm-4 col-xs-12" ng-repeat="product in products | filter : filter track by $index">
 						<div class="product-thumb">
 							<div class="image">
-								<a href="/shop-details/{{$index + 1}}"><img ng-src="{{shop.image}}" alt="image" title="image" class="img-responsive" /></a>
+								<a href="/shopping-cart/{{$index + 1}}"><img ng-src="{{product.name}}" alt="image" title="image" class="img-responsive" /></a>
 								<div class="hoverbox">
-									<button type="button" class="btn-primary" onclick="location.href='/shop-details/{{$index + 1}}'">order now</button>
+									<button type="button" class="btn-primary" onclick="location.href='/shopping-card/{{$index + 1}}'">order now</button>
 								</div>
 							</div>
 							<div class="caption">
-								<h4>{{shop.name}}</h4>
+								<h4>{{product.name}}</h4>
 								<div class="rating">
 									<i class="icofont icofont-star"></i>
 									<i class="icofont icofont-star"></i>
@@ -83,9 +83,9 @@
 									<i class="icofont icofont-star"></i>
 									<i class="icofont icofont-star"></i>
 								</div>
-								<div class="price">${{shop.avg_price}}</div>
-								<p>{{shop.description}}</p>
-								<button type="button" class="btn-primary" onclick="location.href='shoppingcart.html'">order now</button>	
+								<div class="price">${{product.avg_price}}</div>
+								<p>{{product.description}}</p>
+								<button type="button" class="btn-primary" onclick="location.href='/shopping-cart/{{$index + 1}}'">order now</button>	
 							</div>
 						</div>
 					</div>
