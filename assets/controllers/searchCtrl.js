@@ -55,6 +55,5 @@ angular.module('myApp').controller('searchCtrl', ['$routeParams', function($rout
 		name : "Shop 11",
 		avg_price : "20.00",
 		description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus."
-	},]
-
+	}]
 }])

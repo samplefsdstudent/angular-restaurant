@@ -20,7 +20,8 @@ angular.module('myApp').controller('shopCtrl', ['$routeParams', function($routeP
 			}
 			$scope.class = 'col-lg-4 col-md-4 col-sm-6 col-xs-12';
 		}
-	}
+	};
+
 	$scope.shops = [{
 		image : "../assets/images/shop/01.jpg",
 		name : "Product 1",
@@ -75,6 +76,5 @@ angular.module('myApp').controller('shopCtrl', ['$routeParams', function($routeP
 		rating : 4,
 		price : 20.00,
 		description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non eleifend erat, vitae aliquam metus. Donec orci tellus, rhoncus eget ipsum tempus, dignissim rutrum enim. Integer interdum sapien nec tempus luctus."
-	},]
-
+	}]
 }])
