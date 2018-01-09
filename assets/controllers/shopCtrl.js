@@ -1,4 +1,4 @@
-angular.module('myApp').controller('shopCtrl', ['$routeParams', function($routeParams){
+angular.module('myApp').controller('shopCtrl', ['$routeParams','$scope', function($routeParams,$scope){
 	$scope.view = {
 		grid : true,
 		list : false

@@ -1,4 +1,4 @@
-angular.module('myApp').controller('searchCtrl', ['$routeParams', function($routeParams){
+angular.module('myApp').controller('searchCtrl', ['$routeParams','$scope', function($routeParams,$scope){
 	$scope.filter = '';
 	$scope.products = [{
 		image : "../assets/images/shop/01.jpg",
