@@ -22,14 +22,9 @@ $(document).ready(function(){
 		$('#myModal').on('hidden.bs.modal', function(){
 			$('#myModal .modal-body').html('');
 		});
-		
-		
-		
-		
    });	
 })
-        
-         
+               
 $(document).on('click', 'a.controls', function(){
 	var index = $(this).attr('href');
 	var src = $('.galery:nth-child('+ index +') img').attr('src');             
@@ -49,9 +44,6 @@ $(document).on('click', 'a.controls', function(){
 	
 	var total = $('.galery').length + 1; 
 	//hide next button
-	
-	
-	
 	return false;
 });
 

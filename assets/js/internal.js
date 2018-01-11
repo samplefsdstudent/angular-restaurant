@@ -20,7 +20,6 @@ $(document).on('ready',function(){
 	"use strict";
 	loadscroler();
 	
-	
 	/*slideshow script code start here*/
 	$('.slideshow').owlCarousel({
 		items: 1,
@@ -81,8 +80,6 @@ $(document).on('ready',function(){
 	});
 	/*blogs script code end here*/
 
-	
-	
 	//quantity code
 	$(function () {
 		$('.add').on('click',function(){
@@ -95,22 +92,5 @@ $(document).on('ready',function(){
 			var currentVal = parseInt($qty.val());
 			$qty.val(currentVal - 1);					
 		});
-	});
-	
-	
-	// Product Grid
-	$('#grid-view').on('click',function(){
-		
-		$('.mainpage .row > .product-list').attr('class', 'product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12');
-		localStorage.setItem('display', 'grid');
-	});
-	$('#list-view').on('click',function(){
-		
-		$('.mainpage .row > .product-grid').attr('class', 'product-layout product-list col-xs-12');
-		localStorage.setItem('display', 'list');
-	});
-	
-		
-	
-			
+	});	
 });

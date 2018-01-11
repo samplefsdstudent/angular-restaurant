@@ -69,7 +69,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-12" ng-repeat="product in products | filter : filter track by $index">
 						<div class="product-thumb">
 							<div class="image">
-								<a href="/shopping-cart/{{$index + 1}}"><img ng-src="{{product.name}}" alt="image" title="image" class="img-responsive" /></a>
+								<a href="/shopping-cart/{{$index + 1}}"><img ng-src="{{product.image}}" alt="image" title="image" class="img-responsive" /></a>
 								<div class="hoverbox">
 									<button type="button" class="btn-primary" ng-click="location.href='/shopping-card/{{$index + 1}}'">order now</button>
 								</div>
