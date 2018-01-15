@@ -40,64 +40,33 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
+										<tr ng-repeat="item in items track by $index">
 											<td>
 												<a href="#">
-													<img src="../assets/images/our-menu/01.jpg" class="img-responsive" alt="thumb" title="thumb" />
+													<img ng-src="{{item.image}}" class="img-responsive" alt="thumb" title="thumb" />
 												</a>
 												<div class="name">
-													<h4>Food Title Here</h4>
-													<p>Curses / Dictum / Risus</p>
+													<h4>{{item.name}}</h4>
+													<p>{{item.description}}</p>
  													<div class="rating">
-														<i class="icofont icofont-star"></i>
-														<i class="icofont icofont-star"></i>
-														<i class="icofont icofont-star"></i>
-														<i class="icofont icofont-star"></i>
-														<i class="icofont icofont-star"></i>
+														<i class="icofont icofont-star" ng-style="(item.rating > 0) ? {'color' : '#FFA41F'} : {'color' : '#b2b2b2'}"></i>
+														<i class="icofont icofont-star" ng-style="(item.rating > 1) ? {'color' : '#FFA41F'} : {'color' : '#b2b2b2'}"></i>
+														<i class="icofont icofont-star" ng-style="(item.rating > 2) ? {'color' : '#FFA41F'} : {'color' : '#b2b2b2'}"></i>
+														<i class="icofont icofont-star" ng-style="(item.rating > 3) ? {'color' : '#FFA41F'} : {'color' : '#b2b2b2'}"></i>
+														<i class="icofont icofont-star" ng-style="(item.rating > 4) ? {'color' : '#FFA41F'} : {'color' : '#b2b2b2'}"></i>
 													</div>
 												</div>
 											</td>
-											<td class="text-center">$ 35.00</td>
+											<td class="text-center">$ {{item.price}}</td>
 											<td class="text-center">
 												<p class="qtypara">
-													<span id="minus1" class="minus"><i class="icofont icofont-minus"></i></span>
+													<span id="minus1" class="minus"><a ng-click="(item.numer > 0) ? item.number = item.number - 1 : item.number"><i class="icofont icofont-minus"></i></a></span>
 													<input type="text" name="quantity" value="1" size="2" id="input-quantity1" class="form-control qty" />
-													<span id="add1" class="add"><i class="icofont icofont-plus"></i></span>
+													<span id="add1" class="add"><a ng-click="(item.numer < 10) ? item.number = item.number + 1 : item.number"><i class="icofont icofont-plus"></i></a></span>
 													<input type="hidden" name="product_id" value="1" />
 												</p>
 											</td>
-											<td class="text-center">$35.00</td>
-											<td class="text-center">
-												<button type="button"><i class="icofont icofont-close-line"></i></button>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#">
-													<img src="../assets/images/our-menu/01.jpg" class="img-responsive" alt="thumb" title="thumb" />
-												</a>
-												<div class="name">
-													<h4>Food Title Here</h4>
-													<p>Curses / Dictum / Risus</p>
- 													<div class="rating">
-														<i class="icofont icofont-star"></i>
-														<i class="icofont icofont-star"></i>
-														<i class="icofont icofont-star"></i>
-														<i class="icofont icofont-star"></i>
-														<i class="icofont icofont-star"></i>
-													</div>
-												</div>
-											</td>
-											<td class="text-center">$ 35.00</td>
-											<td class="text-center">
-												<p class="qtypara">
-													<span id="minus2" class="minus"><i class="icofont icofont-minus"></i></span>
-													<input type="text" name="quantity" value="1" size="2" id="input-quantity2" class="form-control qty" />
-													<span id="add2" class="add"><i class="icofont icofont-plus"></i></span>
-													<input type="hidden" name="product_id" value="1" />
-												</p>
-											</td>
-											<td class="text-center">$35.00</td>
+											<td class="text-center">${{item.price*number}}</td>
 											<td class="text-center">
 												<button type="button"><i class="icofont icofont-close-line"></i></button>
 											</td>
@@ -121,22 +90,22 @@
 					<div class="tab-pane col-md-12 col-sm-12 col-xs-12" id="tab-info">
 						<div class="col-md-5 col-sm-5 col-xs-12 padd0">
 							<h6>shopping address</h6>
-							<form method="post" enctype="multipart/form-data">	
+							<form method="post" ng-submit="submitShoppingAddress()">	
 								<fieldset>	
 									<div class="form-group">
-										<input name="india" value="" placeholder="india" id="input-india" class="form-control" type="text">
+										<input name="india" ng-model="adData.country" placeholder="india" id="input-india" class="form-control" type="text">
 									</div>
 									<div class="form-group">
-										<input name="City" value="" placeholder="City" id="input-City" class="form-control" type="text">
+										<input name="City" ng-model="adData.city" placeholder="City" id="input-City" class="form-control" type="text">
 									</div>
 									<div class="form-group">
-										<input name="state" value="" placeholder="state / region / province" id="input-state" class="form-control" type="text">
+										<input name="state" ng-model="adData.state" placeholder="state / region / province" id="input-state" class="form-control" type="text">
 									</div>
 									<div class="form-group">
-										<input name="code" value="" placeholder="zip code" id="input-code" class="form-control" type="text">
+										<input name="code" ng-model="adData.pin_code" placeholder="pin code" id="input-code" class="form-control" type="text">
 									</div>
 									<div class="form-group">
-										<input name="address" value="" placeholder="address" id="input-address" class="form-control" type="text">
+										<input name="address" ng-model="adData.address" placeholder="address" id="input-address" class="form-control" type="text">
 									</div>
 								</fieldset>
 							</form>
@@ -147,16 +116,16 @@
 							<form method="post" enctype="multipart/form-data">	
 								<fieldset>	
 									<div class="form-group">
-										<input name="firstname" value="" placeholder="first name" id="input-firstname" class="form-control" type="text">
+										<input name="firstname" ng-model="adData.first_name" placeholder="first name" id="input-firstname" class="form-control" type="text">
 									</div>
 									<div class="form-group">
-										<input name="lastname" value="" placeholder="last name" id="input-lastname" class="form-control" type="text">
+										<input name="lastname" ng-model="adData.last_name" placeholder="last name" id="input-lastname" class="form-control" type="text">
 									</div>
 									<div class="form-group">
-										<input name="email" value="" placeholder="email" id="input-email" class="form-control" type="text">
+										<input name="email" ng-model="adData.email" placeholder="email" id="input-email" class="form-control" type="text">
 									</div>
 									<div class="form-group">
-										<input name="phone" value="" placeholder="phone number" id="input-phone" class="form-control" type="text">
+										<input name="phone" ng-model="adData.mobile_no" placeholder="mobile number" id="input-phone" class="form-control" type="text">
 									</div>
 								</fieldset>
 							</form>
@@ -171,7 +140,7 @@
 						</div>
 					</div>
 					<div class="tab-pane col-md-12 col-sm-12 col-xs-12"  id="tab-payment">
-						<form class="form-horizontal" method="post">
+						<form class="form-horizontal" method="post" ng-submit="placeOrder()">
 							<fieldset>
 								<div class="form-group ">
 									<ul class="list-inline text-center link">
@@ -191,16 +160,16 @@
 								</div>
 								<div class="form-group">	
 									<div class="col-sm-6">
-										<input class="form-control" id="input-card" placeholder="card holder name" value="" name="email" required="" type="text">
+										<input class="form-control" id="input-card" placeholder="card holder name" ng-model="cardData.holder_name" name="email" required="" type="text">
 									</div>
 									<div class="col-sm-6">
-										<input class="form-control" id="input-expiry" placeholder="card number" value="" name="email" required="" type="text">
+										<input class="form-control" id="input-expiry" placeholder="card number" ng-model="cardData.card_no" name="email" required="" type="text">
 									</div>
 								</div>	
 								<div class="form-group">
 									<label>end date</label>
 									<div class="col-sm-3">
-										<select class="selectpicker form-control bs-select-hidden">
+										<select class="selectpicker form-control bs-select-hidden" ng-model="cardData.end_date">
 											<option selected="" value="0">mm</option>
 											<option value="1">Jan</option>
 											<option value="2">Feb</option>
@@ -210,7 +179,7 @@
 										</select>
 									</div>
 									<div class="col-sm-3">
-										<select class="selectpicker form-control bs-select-hidden">
+										<select class="selectpicker form-control bs-select-hidden" ng-model="cardData.end_year"> 
 											<option selected="" value="0">year</option>
 											<option value="1">2001</option>
 											<option value="2">2002</option>
@@ -220,7 +189,7 @@
 										</select>
 									</div>
 									<div class="col-sm-2">
-										<input class="form-control" id="input-cvv" placeholder="cvv" value="" name="email" required="" type="text">
+										<input class="form-control" id="input-cvv" placeholder="cvv" ng-model="cardData.cvv" name="email" required="" type="text">
 									</div>
 								</div>	
 							</fieldset>

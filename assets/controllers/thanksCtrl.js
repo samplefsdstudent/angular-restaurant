@@ -1,4 +1,4 @@
-angular.module('myApp').controller('thanksCtrl', ['$routeParams', function($routeParams){
+angular.module('myApp').controller('thanksCtrl', ['$routeParams','$scope', function($routeParams,$scope){
 
 
 }])

@@ -58,4 +58,8 @@ var myApp = angular.module('myApp', ['ngRoute'])
 
     $locationProvider.html5Mode(true);
 
-  }]);
+  }])
+
+  .service('RestaurantService', function() {
+    var cart = [];
+  });
