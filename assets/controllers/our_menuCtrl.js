@@ -911,7 +911,7 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 	}
 
 	$scope.switch = function(value, data, index){
-		var bool = $scope.addToCart(adta,index)
+		var bool = $scope.addToCart(data,index)
 		if(bool){
 			return (value) ? false : true
 		}
