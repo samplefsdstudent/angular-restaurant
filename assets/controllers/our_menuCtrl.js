@@ -897,9 +897,7 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 			return true;
 		}else{
 			RestaurantService.cart.filter(function(recipe, index){
-				if(!angular.equals(recipe.name, data.name)){
-					return recipe
-				}
+				return !angular.equals(recipe.name, data.name)
 			})
 			alert(`"${data.name}" is removed from your Cart!`);
 			console.log(RestaurantService.cart);
