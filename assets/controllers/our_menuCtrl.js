@@ -883,7 +883,7 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 	}];
 
 	$scope.addToCart = function(data, index){
-		if(!item.checked){
+		if(!data.checked){
 			RestaurantService.cart.push({
 			name : data.name,
 			image : data.image,
