@@ -1,384 +1,45 @@
-angular.module('myApp').controller('homeCtrl', ['$routeParams','$scope', function($routeParams, $scope){
+angular.module('myApp').controller('homeCtrl', ['$routeParams','$scope','RestaurantService', function($routeParams, $scope, RestaurantService){
 
 	$scope.filter = 'all';
 	$scope.reserveData = {
 		no_persons : 0
 	};
-	$scope.recipes = [{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/01.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "all"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/04.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "all"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/07.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "all"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/02.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "all"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/05.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "all"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/08.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "all"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/03.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "all"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/06.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "all"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/09.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "all"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/07.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "breakfast"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/02.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "breakfast"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/01.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "breakfast"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/04.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "breakfast"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/05.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "breakfast"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/06.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "breakfast"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/09.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "breakfast"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/08.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "breakfast"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/01.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "lunch"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/04.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "lunch"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/07.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "lunch"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/02.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "lunch"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/05.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "lunch"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/08.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "lunch"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/03.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "lunch"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/06.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "lunch"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/09.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "lunch"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/07.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dinner"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/02.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dinner"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/01.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dinner"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/04.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dinner"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/05.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dinner"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/08.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dinner"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/03.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dinner"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/09.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dinner"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/06.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dinner"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/01.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "others"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/04.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "others"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/07.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "others"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/02.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "others"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/05.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "others"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/08.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "others"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/03.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "others"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/09.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "others"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/07.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "others"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/02.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "drinks"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/01.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "drinks"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/04.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "drinks"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/05.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "drinks"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/08.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "drinks"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/09.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "drinks"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/03.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "drinks"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/our-menu/06.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "drinks"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/01.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/02.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/03.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/04.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/05.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/01.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/02.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/03.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/04.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	},{
-		name : "Food Title Here",
-		image : "assets/images/dishes/05.jpg",
-		price : "35.00",
-		description : "Cursus / Dictum / Risus",
-		type : "dish"
-	}];
+	$scope.recipes = RestaurantService.recipes;
 
 	$scope.doReservation = function(data){
 		alert('Hi ' + data.name + ' ,Booking is done!')
+	}
+
+	$scope.addToCart = function(data, index){
+		if(!data.checked){
+			RestaurantService.cart.push({
+			name : data.name,
+			image : data.image,
+			price : data.price,
+			description : data.description,
+			type : data.type
+			})
+			alert(`"${data.name}" is added to your Cart!`);
+			$scope.recipes[index].checked = true;
+			return true;
+		}else{
+			for(var i=0;i < RestaurantService.cart.length;i++){
+				if(angular.equals(RestaurantService.cart[i].name, data.name))
+					RestaurantService.cart.splice(i,1);
+					break;
+			}
+			alert(`"${data.name}" is removed from your Cart!`);
+			console.log(RestaurantService.cart);
+			RestaurantService.recipes[index] = false;
+			$scope.recipes = RestaurantService.recipes;
+			return true;
+		}
+	}
+
+	$scope.switch = function(value, data, index){
+		var bool = $scope.addToCart(data,index)
+		if(bool){
+			return (value) ? $scope.recipes[index].checked = false : $scope.recipes[index].checked = true
+		}
 	}
 }])
