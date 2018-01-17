@@ -62,6 +62,6 @@ var myApp = angular.module('myApp', ['ngRoute'])
 
   .factory('RestaurantService', function() {
     return {
-        cart = []
+        cart : []
     }
   });
