@@ -883,7 +883,6 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 	}];
 
 	$scope.addToCart = function(data, index){
-		console.log('inside addToCart');
 		if(!data.checked){
 			RestaurantService.cart.push({
 			name : data.name,
@@ -913,7 +912,7 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 	$scope.switch = function(value, data, index){
 		var bool = $scope.addToCart(data,index)
 		if(bool){
-			return (value) ? false : true
+			return (value) ? $scope.recipes[index].checked = false : $scope.recipes[index].checked = true
 		}
 	}
 }])
