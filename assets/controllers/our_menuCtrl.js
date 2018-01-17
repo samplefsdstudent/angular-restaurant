@@ -892,7 +892,7 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 			description : data.description,
 			type : data.type
 			})
-			console.log(`"${data.name}" is added to your Cart!`);
+			alert(`"${data.name}" is added to your Cart!`);
 			$scope.recipes[index].checked = true;
 
 			return true;
@@ -902,7 +902,7 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 					return recipe
 				}
 			})
-			console.log(`"${data.name}" is removed from your Cart!`);
+			alert(`"${data.name}" is removed from your Cart!`);
 			console.log(RestaurantService.cart);
 			$scope.recipes[index].checked = false;
 
