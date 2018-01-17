@@ -896,11 +896,8 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 
 			return true;
 		}else{
-			RestaurantService.cart.filter(function(recipe, index){
-				return !angular.equals(recipe.name, data.name)
-			})
 			for(var i=0;i < RestaurantService.cart.length;i++){
-				if(angular.equals(RestaurantService.cart[i].name, recipe.name))
+				if(angular.equals(RestaurantService.cart[i].name, data.name))
 					RestaurantService.cart.splice(i,1);
 					break;
 			}
