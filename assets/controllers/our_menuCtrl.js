@@ -893,6 +893,8 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 			})
 			console.log(`"${data.name}" is added to your Cart!`);
 			$scope.recipes[index].checked = true;
+
+			return true;
 		}else{
 			RestaurantService.cart.filter(function(recipe, index){
 				if(!angular.equals(recipe.name, data.name)){
@@ -902,16 +904,13 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 			console.log(`"${data.name}" is removed from your Cart!`);
 			console.log(RestaurantService.cart);
 			$scope.recipes[index].checked = false;
+
+			return true;
 		}
 	}
 
-	$scope.switch = function(value, data){
-		if(value){
-			
-		}
-		else{
-			$scope.addToCart(data);
-		}
-		return (value) ? false : true
+	$scope.switch = function(value, data, index){
+		if($scope.addToCart(data,index))
+			return (value) ? false : true
 	}
 }])
