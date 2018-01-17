@@ -900,7 +900,9 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 				return !angular.equals(recipe.name, data.name)
 			})
 			for(var i=0;i < RestaurantService.cart.length;i++){
-				RestaurantService.cart.splice(i,1);
+				if(angular.equals(RestaurantService.cart[i].name, recipe.name))
+					RestaurantService.cart.splice(i,1);
+					break;
 			}
 			alert(`"${data.name}" is removed from your Cart!`);
 			console.log(RestaurantService.cart);
