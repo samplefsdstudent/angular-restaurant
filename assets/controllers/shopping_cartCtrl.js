@@ -1,4 +1,4 @@
-angular.module('myApp').controller('shopping_cartCtrl', ['$routeParams','$scope','RestaurantService', function($routeParams,RestaurantService){
+angular.module('myApp').controller('shopping_cartCtrl', ['$routeParams','$scope','RestaurantService', function($routeParams,$scope,RestaurantService){
 	$scope.items = RestaurantService.cart;
 	$scope.filter = '1';
 	angular.forEach($scope.items, function(item){
@@ -7,9 +7,11 @@ angular.module('myApp').controller('shopping_cartCtrl', ['$routeParams','$scope'
 
 	$scope.next = function(flag){
 		if(flag == 0){
-			
+			$scope.filter = '1';
 		}else if(flag == 1){
-			
+			$scope.filter = '2';
+		} else if(flag == 2){
+			$scope.filter = '3';
 		} else if(flag == 2){
 			
 		}
