@@ -21,7 +21,7 @@ angular.module('myApp').controller('homeCtrl', ['$routeParams','$scope','Restaur
 			})
 			alert(`"${data.name}" is added to your Cart!`);
 			$scope.recipes[index].checked = true;
-			return true;
+			return false;
 		}else{
 			for(var i=0;i < RestaurantService.cart.length;i++){
 				if(angular.equals(RestaurantService.cart[i].name, data.name))
@@ -30,7 +30,7 @@ angular.module('myApp').controller('homeCtrl', ['$routeParams','$scope','Restaur
 			}
 			alert(`"${data.name}" is removed from your Cart!`);
 			console.log(RestaurantService.cart);
-			RestaurantService.recipes[index] = false;
+			RestaurantService.recipes[index].checked = false;
 			$scope.recipes = RestaurantService.recipes;
 			return true;
 		}
