@@ -61,7 +61,7 @@
 											<td class="text-center">
 												<p class="qtypara">
 													<span id="minus1" class="minus"><a ng-click="(item.numer > 0) ? item.number = item.number - 1 : item.number"><i class="icofont icofont-minus"></i></a></span>
-													<input type="text" name="quantity" value="1" size="2" id="input-quantity1" class="form-control qty" />
+													<input type="text" name="quantity" ng-model="item.number" size="2" id="input-quantity1" class="form-control qty" required/>
 													<span id="add1" class="add"><a ng-click="(item.numer < 10) ? item.number = item.number + 1 : item.number"><i class="icofont icofont-plus"></i></a></span>
 													<input type="hidden" name="product_id" value="1" />
 												</p>
