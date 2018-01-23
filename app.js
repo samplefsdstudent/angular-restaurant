@@ -68,6 +68,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -76,6 +77,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -84,6 +86,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -92,6 +95,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -100,6 +104,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -108,6 +113,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -116,6 +122,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -124,6 +131,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/06.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -132,6 +140,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -140,6 +149,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -148,6 +158,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -156,6 +167,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -164,6 +176,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -172,6 +185,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -180,6 +194,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/06.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -188,6 +203,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -196,6 +212,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -204,6 +221,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -212,6 +230,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -220,6 +239,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -228,6 +248,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -236,6 +257,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -244,6 +266,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -252,6 +275,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -260,6 +284,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/06.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -268,6 +293,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "all"
@@ -276,6 +302,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -284,6 +311,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -292,6 +320,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -300,6 +329,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -308,6 +338,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -316,6 +347,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/06.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -324,6 +356,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -332,6 +365,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "breakfast"
@@ -340,6 +374,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -348,6 +383,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -356,6 +392,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -364,6 +401,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -372,6 +410,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -380,6 +419,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -388,6 +428,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -396,6 +437,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/06.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -404,6 +446,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -412,6 +455,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -420,6 +464,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -428,6 +473,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -436,6 +482,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -444,6 +491,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -452,6 +500,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -460,6 +509,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/06.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -468,6 +518,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "lunch"
@@ -476,6 +527,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -484,6 +536,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -492,6 +545,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -500,6 +554,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -508,6 +563,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -516,6 +572,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -524,6 +581,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -532,6 +590,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -540,6 +599,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/06.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -548,6 +608,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -556,6 +617,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -564,6 +626,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -572,6 +635,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -580,6 +644,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -588,6 +653,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -596,6 +662,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/06.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dinner"
@@ -604,6 +671,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -612,6 +680,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -620,6 +689,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -628,6 +698,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -636,6 +707,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -644,6 +716,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -652,6 +725,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -660,6 +734,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -668,6 +743,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -676,6 +752,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -684,6 +761,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -692,6 +770,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -700,6 +779,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -708,6 +788,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -716,6 +797,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -724,6 +806,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -732,6 +815,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -740,6 +824,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/07.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "others"
@@ -748,6 +833,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -756,6 +842,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -764,6 +851,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -772,6 +860,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -780,6 +869,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -788,6 +878,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -796,6 +887,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -804,6 +896,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/06.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -812,6 +905,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -820,6 +914,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -828,6 +923,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -836,6 +932,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -844,6 +941,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/08.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -852,6 +950,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/09.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -860,6 +959,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/our-menu/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "drinks"
@@ -868,6 +968,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"
@@ -876,6 +977,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"
@@ -884,6 +986,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"
@@ -892,6 +995,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"
@@ -900,6 +1004,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"
@@ -908,6 +1013,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/01.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"
@@ -916,6 +1022,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/02.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"
@@ -924,6 +1031,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/03.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"
@@ -932,6 +1040,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/04.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"
@@ -940,6 +1049,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
         image : "assets/images/dishes/05.jpg",
         price : 35.00,
         number : 1,
+        rating : 4,
         checked : false,
         description : "Cursus / Dictum / Risus",
         type : "dish"

@@ -7,6 +7,7 @@ angular.module('myApp').controller('our_menuCtrl', ['$routeParams','$scope','Res
 			RestaurantService.cart.push({
 			name : data.name,
 			image : data.image,
+			rating : data.rating,
 			price : data.price,
 			description : data.description,
 			type : data.type

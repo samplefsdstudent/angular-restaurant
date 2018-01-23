@@ -16,6 +16,7 @@ angular.module('myApp').controller('homeCtrl', ['$routeParams','$scope','Restaur
 			name : data.name,
 			image : data.image,
 			price : data.price,
+			rating : data.rating,
 			description : data.description,
 			type : data.type
 			})
