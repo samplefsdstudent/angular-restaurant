@@ -6,16 +6,17 @@ angular.module('myApp').controller('shopping_cartCtrl', ['$routeParams','$scope'
 	})
 
 	$scope.next = function(flag){
-		if(flag == 0){
+		if(flag == 1){
 			$scope.filter = '1';
-		}else if(flag == 1){
+
+		}else if(flag == 2){
 			$scope.filter = '2';
-		} else if(flag == 2){
+
+		}else if(flag == 3){
 			$scope.filter = '3';
-		} else if(flag == 2){
-			
+
 		}
-	}
+	};
 
 	$scope.$watch('items', function(oldValue, newValue){
 		angular.forEach($scope.items, function(item){
